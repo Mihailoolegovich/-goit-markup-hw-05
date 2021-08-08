@@ -628,6 +628,52 @@ img {
   padding: 20px 24px;
 }
 
+.head-cart {
+  position: relative;
+  overflow: hidden;
+}
+
+/* .hidden-text::before {
+  content: ""; */
+
+.link-button .hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(53, 139, 209, 0.9);
+
+  /* opacity: 0;
+  transition-property: top, left;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0; */
+  transform: translatey(100%);
+  transition: transform 250ms;
+}
+
+.link-button .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 322px;
+  height: 168px;
+
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+}
+
+.head-cart:hover .hidden {
+  /* top: 0;
+  left: 0;
+  opacity: 1; */
+  transform: translatex(0);
+}
+
 .publication .title {
   margin-bottom: 4px;
 
